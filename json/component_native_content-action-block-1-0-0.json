@@ -1,0 +1,355 @@
+{
+	"type": "object",
+	"properties": {
+		"backgroundLayout": {
+			"type": "string",
+			"properties": {
+				"elevated": {
+					"text": "non-full-width"
+				},
+				"flat": {
+					"text": "flat"
+				}
+			},
+			"default": "flat",
+			"enum": [
+				"flat",
+				"elevated"
+			]
+		},
+		"contentOverlap": {
+			"type": "string",
+			"dataPath": "contentOverlap",
+			"properties": {
+				"50": {
+					"text": "Top 50% of Content"
+				},
+				"75": {
+					"text": "Top 75% of Content"
+				},
+				"100": {
+					"text": "100% of Content (+ Padding)"
+				}
+			},
+			"default": "100",
+			"enum": [
+				"100",
+				"75",
+				"50"
+			],
+			"parentDataPath": ""
+		},
+		"topContent": {
+			"dataPath": "topContent",
+			"parentDataPath": "",
+			"type": "array",
+			"items": {
+				"asset": [
+					{
+						"type": "nativeheader",
+						"version": "1.0.0"
+					},
+					{
+						"type": "nativehero",
+						"version": "1.1.0"
+					},
+					{
+						"type": "nativeembedcontainer",
+						"version": "1.0.0"
+					},
+					{
+						"type": "component_native_content-action-block",
+						"version": "1.0.0"
+					},
+					{
+						"type": "component_native_header",
+						"version": "1.0.0"
+					},
+					{
+						"type": "imageset",
+						"version": "1.0.0"
+					},
+					{
+						"type": "nativecouponcarousel",
+						"version": "1.1.0"
+					},
+					{
+						"type": "nativeboostwrapper",
+						"version": "1.1.0"
+					},
+					{
+						"type": "nativeboostwrapper",
+						"version": "1.2.0"
+					},
+					{
+						"type": "nativealternatecontentwrapper",
+						"version": "1.0.0"
+					},
+					{
+						"type": "nativeconditionalwrapper",
+						"version": "3.1.0"
+					}
+				]
+			},
+			"minItems": 1,
+			"maxItems": 1
+		},
+		"content": {
+			"type": "array",
+			"items": {
+				"asset": [
+					{
+						"type": "nativehero",
+						"version": "1.0.0"
+					},
+					{
+						"type": "nativeespot",
+						"version": "1.0.0"
+					},
+					{
+						"type": "nativeautorotator",
+						"version": "1.0.0"
+					},
+					{
+						"type": "nativeproductlist",
+						"version": "1.0.0"
+					},
+					{
+						"type": "nativeimagenav",
+						"version": "1.0.0"
+					},
+					{
+						"type": "nativeboostwrapper",
+						"version": "1.0.0"
+					},
+					{
+						"type": "nativetabs",
+						"version": "1.0.0"
+					},
+					{
+						"type": "nativelistcontainer",
+						"version": "1.0.0"
+					},
+					{
+						"type": "nativestaticcontent",
+						"version": "1.0.0"
+					},
+					{
+						"type": "nativesinglecoupon",
+						"version": "1.0.0"
+					},
+					{
+						"type": "nativestaticcontent",
+						"version": "1.0.0"
+					},
+					{
+						"type": "nativequicklinkbuttons",
+						"version": "1.0.0"
+					},
+					{
+						"type": "nativecouponcarousel",
+						"version": "1.0.0"
+					},
+					{
+						"type": "nativealternatecontentwrapper",
+						"version": "1.0.0"
+					},
+					{
+						"type": "nativeunregisteredasset",
+						"version": "1.0.0"
+					},
+					{
+						"type": "nativelistcontainer",
+						"version": "1.0.0"
+					},
+					{
+						"type": "nativetabs",
+						"version": "1.1.0"
+					},
+					{
+						"type": "nativehero",
+						"version": "1.1.0"
+					},
+					{
+						"type": "nativeespot",
+						"version": "1.1.0"
+					},
+					{
+						"type": "nativeembedcontainer",
+						"version": "1.0.0"
+					},
+					{
+						"type": "nativeproductlist",
+						"version": "1.1.0"
+					},
+					{
+						"type": "nativepresetcarousel",
+						"version": "2.0.0"
+					},
+					{
+						"type": "nativepresetcarousel",
+						"version": "2.1.0"
+					},
+					{
+						"type": "imageset",
+						"version": "1.0.0"
+					},
+					{
+						"type": "nativepresetcarousel",
+						"version": "2.2.0"
+					},
+					{
+						"type": "nativeproductlist",
+						"version": "1.4.0"
+					},
+					{
+						"type": "nativeconditionalwrapper",
+						"version": "3.0.0"
+					},
+					{
+						"type": "component__week-streak-wrapper",
+						"version": "1.0.0"
+					},
+					{
+						"type": "nativeconditionalwrapper",
+						"version": "3.1.0"
+					},
+					{
+						"type": "nativeproductlist",
+						"version": "1.3.0"
+					},
+					{
+						"type": "component_native_header",
+						"version": "1.0.0"
+					},
+					{
+						"type": "nativecouponcarousel",
+						"version": "1.1.0"
+					},
+					{
+						"type": "nativeboostwrapper",
+						"version": "1.1.0"
+					},
+					{
+						"type": "nativesinglecoupon",
+						"version": "2.0.0"
+					}
+				]
+			},
+			"dataPath": "content",
+			"parentDataPath": "",
+			"minItems": 1,
+			"maxItems": 1
+		},
+		"backgroundColor": {
+			"type": "string",
+			"dataPath": "oneOf.backgroundColor",
+			"parentDataPath": "oneOf",
+			"enum": [
+				"#074085",
+				"#0F52A2",
+				"#2874C1",
+				"#3D92DF",
+				"#81C5F4",
+				"#AEDAF8",
+				"#D2EAFA",
+				"#EFF7FD",
+				"#3B3E40",
+				"#505458",
+				"#6F7377",
+				"#8B8F94",
+				"#B9BEC2",
+				"#D1D5D8",
+				"#E4E7EA",
+				"#F4F6F8",
+				"#00492A",
+				"#006037",
+				"#0C824B",
+				"#1BA161",
+				"#71CC98",
+				"#A0E3BC",
+				"#C3F1D6",
+				"#E7FBF0",
+				"#810017",
+				"#A9001F",
+				"#E4002A",
+				"#FF3842",
+				"#FF9F9F",
+				"#FFC3C3",
+				"#FFDBDB",
+				"#FEEEEE",
+				"#732102",
+				"#983302",
+				"#C54E04",
+				"#EB6302",
+				"#FFAC02",
+				"#FED241",
+				"#FFEA9D",
+				"#FEF7D5",
+				"#5D2077",
+				"#753790",
+				"#9450AD",
+				"#B177C3",
+				"#D8AFE4",
+				"#E8CBF0",
+				"#F2E1F8",
+				"#F9F2FB",
+				"#F1F1F7",
+				"#FFF",
+				"#000",
+				"#1C1C1E",
+				"#C5C5C7",
+				"#084999",
+				"#2478ce",
+				"#8DC6E8",
+				"#AA182C",
+				"#CB4D21",
+				"#FED141",
+				"#F0b313",
+				"#71984A",
+				"#2e7a3d",
+				"#225d38",
+				"#825999",
+				"#da3367",
+				"#ce0f69",
+				"#f8f9f9",
+				"#eff0f1",
+				"#dfe1e1",
+				"#1d1e1f",
+				"#FEF7E9",
+				"#F8F1FC",
+				"#336699",
+				"#006633",
+				"#990033",
+				"#B2D5B5",
+				"#7D6C9D",
+				"#418FDE",
+				"#0b77cd",
+				"#ffffff",
+				"#000000",
+				"#44095D",
+				"#A2AC92",
+				"#216ead"
+			]
+		},
+		"backgroundImage": {
+			"asset": {
+				"type": "imageset",
+				"version": "1.0.0"
+			}
+		}
+	},
+	"oneOf": [
+		{
+			"required": [
+				"backgroundColor"
+			]
+		},
+		{
+			"required": [
+				"backgroundImage"
+			]
+		}
+	],
+	"required": []
+}
