@@ -1,0 +1,223 @@
+{
+	"type": "object",
+	"properties": {
+		"content": {
+			"type": "object",
+			"properties": {
+				"text": {
+					"type": "object",
+					"properties": {
+						"subheader": {
+							"type": "string"
+						},
+						"header": {
+							"type": "string"
+						},
+						"subtext": {
+							"type": "string"
+						}
+					},
+					"required": []
+				},
+				"style": {
+					"type": "object",
+					"default": {},
+					"properties": {
+						"alignment": {
+							"type": "string",
+							"enum": [
+								"left",
+								"center"
+							],
+							"default": "left"
+						},
+						"textColor": {
+							"type": "string",
+							"enum": [
+								"app-theme",
+								"app-theme-inverse",
+								"light",
+								"dark"
+							],
+							"default": "app-theme"
+						},
+						"backgroundColor": {
+							"type": "string",
+							"enum": [
+								"#074085",
+								"#0F52A2",
+								"#2874C1",
+								"#3D92DF",
+								"#81C5F4",
+								"#AEDAF8",
+								"#D2EAFA",
+								"#EFF7FD",
+								"#3B3E40",
+								"#505458",
+								"#6F7377",
+								"#8B8F94",
+								"#B9BEC2",
+								"#D1D5D8",
+								"#E4E7EA",
+								"#F4F6F8",
+								"#00492A",
+								"#006037",
+								"#0C824B",
+								"#1BA161",
+								"#71CC98",
+								"#A0E3BC",
+								"#C3F1D6",
+								"#E7FBF0",
+								"#810017",
+								"#A9001F",
+								"#E4002A",
+								"#FF3842",
+								"#FF9F9F",
+								"#FFC3C3",
+								"#FFDBDB",
+								"#FEEEEE",
+								"#732102",
+								"#983302",
+								"#C54E04",
+								"#EB6302",
+								"#FFAC02",
+								"#FED241",
+								"#FFEA9D",
+								"#FEF7D5",
+								"#5D2077",
+								"#753790",
+								"#9450AD",
+								"#B177C3",
+								"#D8AFE4",
+								"#E8CBF0",
+								"#F2E1F8",
+								"#F9F2FB",
+								"#F1F1F7",
+								"#FFF",
+								"#000",
+								"#1C1C1E",
+								"#7D787633",
+								"#7D787629",
+								"#7676801F",
+								"#74748014",
+								"#3B3B434A",
+								"#C5C5C7",
+								"#00000066",
+								"#084999",
+								"#2478ce",
+								"#8DC6E8",
+								"#AA182C",
+								"#CB4D21",
+								"#FED141",
+								"#F0b313",
+								"#71984A",
+								"#2e7a3d",
+								"#225d38",
+								"#825999",
+								"#da3367",
+								"#ce0f69",
+								"#f8f9f9",
+								"#eff0f1",
+								"#dfe1e1",
+								"#1d1e1f",
+								"#FEF7E9",
+								"#F8F1FC",
+								"#336699",
+								"#006633",
+								"#990033",
+								"#B2D5B5",
+								"#AFA895EB",
+								"#7D6C9D",
+								"#418FDE",
+								"#0b77cd",
+								"#ffffff",
+								"#000000",
+								"#44095D",
+								"#11284A",
+								"#FFFFFF00",
+								"#00FFFFFF"
+							]
+						}
+					},
+					"required": []
+				},
+				"cta": {
+					"type": "object",
+					"properties": {
+						"button": {
+							"type": "object",
+							"properties": {
+								"text": {
+									"type": "string"
+								},
+								"type": {
+									"type": "string",
+									"enum": [
+										"primary",
+										"secondary"
+									]
+								},
+								"style": {
+									"type": "string",
+									"enum": [
+										"normal",
+										"inverse"
+									]
+								},
+								"accessibilityLabel": {
+									"type": "string"
+								}
+							},
+							"required": []
+						},
+						"text": {
+							"type": "string"
+						}
+					},
+					"oneOf": [
+						{
+							"required": [
+								"button"
+							]
+						},
+						{
+							"required": [
+								"text"
+							]
+						}
+					]
+				}
+			},
+			"required": [],
+			"dataPath": "content",
+			"parentDataPath": ""
+		},
+		"interaction": {
+			"type": "object",
+			"properties": {
+				"destination": {
+					"asset": {
+						"type": "configuration_native_destination",
+						"version": "1.0.0"
+					},
+					"dataPath": "interaction.destination",
+					"parentDataPath": "interaction"
+				}
+			},
+			"required": [],
+			"dataPath": "interaction",
+			"parentDataPath": ""
+		},
+		"meta": {
+			"type": "object",
+			"properties": {
+				"analyticsName": {
+					"type": "string",
+					"default": "header"
+				}
+			},
+			"required": []
+		}
+	},
+	"required": []
+}

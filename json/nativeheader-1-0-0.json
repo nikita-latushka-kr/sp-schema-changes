@@ -1,0 +1,159 @@
+{
+	"type": "object",
+	"properties": {
+		"alignment": {
+			"type": "string",
+			"default": "left",
+			"enum": [
+				"left",
+				"center"
+			]
+		},
+		"textColor": {
+			"type": "string",
+			"default": "app-theme",
+			"enum": [
+				"light",
+				"dark",
+				"app-theme"
+			]
+		},
+		"backgroundColor": {
+			"type": "string",
+			"enum": [
+				"#074085",
+				"#0F52A2",
+				"#2874C1",
+				"#3D92DF",
+				"#81C5F4",
+				"#AEDAF8",
+				"#D2EAFA",
+				"#EFF7FD",
+				"#3B3E40",
+				"#505458",
+				"#6F7377",
+				"#8B8F94",
+				"#B9BEC2",
+				"#D1D5D8",
+				"#E4E7EA",
+				"#F4F6F8",
+				"#00492A",
+				"#006037",
+				"#0C824B",
+				"#1BA161",
+				"#71CC98",
+				"#A0E3BC",
+				"#C3F1D6",
+				"#E7FBF0",
+				"#810017",
+				"#A9001F",
+				"#E4002A",
+				"#FF3842",
+				"#FF9F9F",
+				"#FFC3C3",
+				"#FFDBDB",
+				"#FEEEEE",
+				"#732102",
+				"#983302",
+				"#C54E04",
+				"#EB6302",
+				"#FFAC02",
+				"#FED241",
+				"#FFEA9D",
+				"#FEF7D5",
+				"#5D2077",
+				"#753790",
+				"#9450AD",
+				"#B177C3",
+				"#D8AFE4",
+				"#E8CBF0",
+				"#F2E1F8",
+				"#F9F2FB",
+				"#F1F1F7",
+				"#FFF",
+				"#000",
+				"#1C1C1E",
+				"#7D787633",
+				"#7D787629",
+				"#7676801F",
+				"#74748014",
+				"#3B3B434A",
+				"#C5C5C7",
+				"#00000066",
+				"#084999",
+				"#2478ce",
+				"#8DC6E8",
+				"#AA182C",
+				"#CB4D21",
+				"#FED141",
+				"#F0b313",
+				"#71984A",
+				"#2e7a3d",
+				"#225d38",
+				"#825999",
+				"#da3367",
+				"#ce0f69",
+				"#f8f9f9",
+				"#eff0f1",
+				"#dfe1e1",
+				"#1d1e1f",
+				"#FEF7E9",
+				"#336699",
+				"#006633",
+				"#990033",
+				"#F0B323",
+				"#8EC6E9",
+				"#AFA895EB",
+				"#AFA89580",
+				"#FFFFFF00",
+				"#FFFFFF80",
+				"#4DA3FF"
+			]
+		},
+		"subHeader": {
+			"type": "string"
+		},
+		"headerText": {
+			"type": "string"
+		},
+		"subText": {
+			"type": "string"
+		},
+		"cta": {
+			"type": "object",
+			"editor:strictSchema": true,
+			"properties": {
+				"displayText": {
+					"type": "string"
+				},
+				"webURL": {
+					"type": "string"
+				},
+				"deeplink": {
+					"type": "string"
+				}
+			},
+			"required": [
+				"displayText"
+			],
+			"oneOf": [
+				{
+					"required": [
+						"webURL"
+					]
+				},
+				{
+					"required": [
+						"deeplink"
+					]
+				}
+			]
+		}
+	},
+	"required": [
+		"headerText",
+		"alignment",
+		"textColor"
+	],
+	"editor:strictSchema": true
+}
